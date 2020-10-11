@@ -4,6 +4,8 @@ import java.util.ArrayList;
 // Created by: Logan Kells
 // Date: 10/9/2020
 
+// Intro to Java 11th Edition Liang, Exercise 20.8
+
 public class TestPrimeNumbers {
     public static void main(String[] args){
         // Note: An integer greater than 1 is prime if its only positive divisor is 1 or itself.
