@@ -41,12 +41,11 @@ public class MyNumber {
     }
 
     // Define a public method that is called isPrime() that returns a boolean and implements the Sieve of Eratosthenes method.
-    // NOTE
-    // Theorem 1 - Every integer which is greater than 1 can be expressed as product of primes.
-    // Theorem 2 = If any integer "n" is composite, then "n" has a prime divisor less than or equal to sqrt(n)
+    // NOTE: Prime number theorems
+    //  Theorem 1 - Every integer which is greater than 1 can be expressed as product of primes.
+    //  Theorem 2 = If any integer "n" is composite, then "n" has a prime divisor less than or equal to sqrt(n)
     public boolean isPrime(){
         // Step 1: Generate a list of boolean from initialized as True of length 2 to this.number+1.
-        //ArrayList<Boolean> boolList = new ArrayList<>();
         for(int i=0; i<this.number+1; i++){
             this.boolList.add(Boolean.TRUE);
         }
@@ -58,8 +57,9 @@ public class MyNumber {
         // Determine the integer floor value of square root of this.number (aka this.number^(1/2)).
         for(int value=2; value<=this.number; value++){
             int currLimit = value * value;
-            // If the value in the sieve list is still marked as true and we're still in the bounds of this.number
+            // If the value in the sieve list is still marked as true and the current p^2 <= n
             if(this.boolList.get(value) & currLimit <= this.number){
+                // Set any index = p^2, p^2+value, p^2+value*2... <number to false prime status
                 for(int index = currLimit; index<=this.number; index+=value){
                     this.boolList.set(index, Boolean.FALSE);
                 }
