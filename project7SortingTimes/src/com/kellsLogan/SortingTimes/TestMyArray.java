@@ -1,18 +1,29 @@
-package com.Exercise_23_13;
+package com.kellsLogan.SortingTimes;
+
+// TestMyArray.java
+// COSC-2436 2801 1
+// Created by: Logan Kells
+// Date: 10/19/2020
+// NOTE -
+// All of the sorting algorithms within the class MyArray.java were based on listings from this book:
+// Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition, Y. Daniel Liang
+// Pearson also provides the example code online that can be downloaded and examined as this website:
+// https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_11/cw/
 
 public class TestMyArray {
     public static String convertDuration(long d){
+        // This method will convert a long value to a String object like "567 ms".
         return String.valueOf(d) + " ms";
     }
 
     public static void main(String[] args){
         // Create a new array of sizes 50k, 100k, 150k, 200k, 250k, 300k
-        MyArray a50k = new MyArray(500);
-        MyArray a100k = new MyArray(1000);
-        MyArray a150k = new MyArray(1500);
-        MyArray a200k = new MyArray(2000);
-        MyArray a250k = new MyArray(2500);
-        MyArray a300k = new MyArray(3000);
+        MyArray a50k = new MyArray(50000);
+        MyArray a100k = new MyArray(100000);
+        MyArray a150k = new MyArray(150000);
+        MyArray a200k = new MyArray(200000);
+        MyArray a250k = new MyArray(250000);
+        MyArray a300k = new MyArray(300000);
 
         System.out.println("Running sorting algorithms...");
 

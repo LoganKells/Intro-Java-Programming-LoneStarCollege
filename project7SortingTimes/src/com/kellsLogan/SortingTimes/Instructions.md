@@ -1,6 +1,12 @@
-# Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition, Y. Daniel Liang
-## Exercise 23.13
-### (Execution time for sorting)
+# Lone Star College
+## Project 7 (Week 8) Sorting Times
+* COSC-2436 2801 1
+* Created by: Logan Kells
+* Date: 10/19/2020
+### Instructions
+Note: This is from Introduction to Java Programming and Data Structures, 
+Comprehensive Version, 11th Edition, Y. Daniel Liang, Exercise 23.13 (Execution time for sorting).
+
 Write a program that obtains the execution time of:
 * selection sort
 * bubble sort

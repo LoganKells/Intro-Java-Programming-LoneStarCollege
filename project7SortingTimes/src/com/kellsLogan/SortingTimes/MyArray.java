@@ -1,12 +1,18 @@
-package com.Exercise_23_13;
+package com.kellsLogan.SortingTimes;
+
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// MyArray.java
+// COSC-2436 2801 1
+// Created by: Logan Kells
+// Date: 10/19/2020
 // NOTE -
 // All of the sorting algorithms were based on listings from this book:
 // Introduction to Java Programming and Data Structures, Comprehensive Version, 11th Edition, Y. Daniel Liang
 // Pearson also provides the example code online that can be downloaded and examined as this website:
 // https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_11/cw/
+
 public class MyArray {
     private final int size;
     private final int[] data;
