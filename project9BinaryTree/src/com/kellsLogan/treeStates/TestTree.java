@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 
+// TestTree.java
+// COSC-2436 2801 1
+// Created by: Logan Kells
+// Date: 11/2/2020
+
 public class TestTree {
     public static void main(String[] args){
         // This test will utilize the state_usa.txt input file of the 50 USA state names.
@@ -13,22 +18,35 @@ public class TestTree {
         ArrayList<String> stateNames = loadText();
 
         // Create a BinaryTree object
+        System.out.println("Creating Binary Search Tree...");
         BinaryTree stateTree = new BinaryTree();
-
-        // test adding root
-//        stateTree.add(1, "Alabama");
-//        stateTree.add(4, "Alaska");
-//        stateTree.add(3, "Alaska");
 
         // Load each state
         for (int i=1; i<stateNames.size()+1; i++){
+            String currState = stateNames.get(i-1);
+            // Slice the string into the state value and the state name (e.g. "01,Alabama" -> value=1, name="Alabama")
+            int loc = currState.indexOf(",");
+            int currValue = Integer.parseInt(currState.substring(0,loc));
+            String currName = currState.substring(loc+1,currState.length());
             // Load a new node for each state.
-            stateTree.add(i, stateNames.get(i-1));
+            stateTree.add(currValue, currName);
         }
+        System.out.println("Tree created.");
+
+        // Test the inorder cursor walk of the tree.
+        System.out.println(".\n.\n.\nPrintout of In-Order cursor walk of tree:");
+        stateTree.inOrderWalk(stateTree.getRootNode());
+
+        // Test the postorder cursor walk of the tree.
+        System.out.println(".\n.\n.\nPrintout of Post-Order cursor walk of tree:");
+        stateTree.postOrderWalk(stateTree.getRootNode());
+
+        // Test the Pre-Order cursor walk of the tree.
+        System.out.println(".\n.\n.\nPrintout of Pre-Order cursor walk of tree:");
+        stateTree.preOrderWalk(stateTree.getRootNode());
 
         // End
-        System.out.println("Ending program.");
-
+        System.out.println("\n.\n.\n.\nEnding program.");
     }
 
     public static ArrayList<String> loadText(){

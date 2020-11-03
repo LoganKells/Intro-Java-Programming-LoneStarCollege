@@ -5,6 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+// StacksAndQueues.java
+// COSC-2436 2801 1
+// Created by: Logan Kells
+// Date: 10/26/2020
+
 public class StacksAndQueues {
     public static void main(String[] args){
         // Create a Scanner object for user input in console.

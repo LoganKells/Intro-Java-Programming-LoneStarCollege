@@ -1,9 +1,11 @@
 package com.kellsLogan.treeStates;
 
-/**
- * Generic TreeNode object
- * @param <E>
- */
+// TreeNode.java
+// COSC-2436 2801 1
+// Created by: Logan Kells
+// Date: 11/2/2020
+
+
 public class TreeNode<E> {
     protected int value; // this will value will be used for sorting
     protected String name; // This can store a useful identifying String w/ the value.
