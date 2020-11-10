@@ -14,9 +14,11 @@ Use the TestAVLTree class to test. This will search in the local "./resources" p
 The following files are included in this package.
 * ./src/package/TestAVLTree.java
 * ./src/package/AVLTreeNode.java
+* ./src/package/AVLTree.java
 * ./src/package/BinaryTree.java
 * ./src/package/Instructions.md
 * ./src/package/readme.md
+* ./resources/betterStates.txt
 * ./resources/states_usa_ordered.txt
 * ./resources/states_usa_unordered.txt
 
@@ -26,8 +28,12 @@ The following files are included in this package.
 * Please include ".txt" in the filename when prompted in the console.
 
 ## Run a sample
-1. Please utilize the "TestAVLTree" class to run samples of the "BinaryTree" class.
-2. Enter the filename when prompted. Provided are two sample .txt files. 
-One is ordered while the other is not ordered: "states_usa_ordered.txt", "states_usa_unordered.txt".
-3. Review the results from the cursor walks of the binary search tree: inorder, preorder, postorder.
+1.) Please utilize the "TestAVLTree" class to run samples of the "BinaryTree" class.
+
+2.) Enter the filename when prompted. Provided are three sample .txt files.
+* One is shuffled without sub-sorts: "betterStates.txt"
+* One is pre-sorted: "states_usa_ordered.txt"
+* One is unsorted but contains sub-sorts: "states_usa_unordered.txt".
+
+3.) Review the results from the cursor walks of the binary search tree: inorder, preorder, postorder.
 

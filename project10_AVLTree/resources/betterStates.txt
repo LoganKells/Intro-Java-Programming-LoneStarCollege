@@ -1,0 +1,50 @@
+31,New Mexico
+19,Maine
+50,Wyoming
+25,Missouri
+27,Nebraska
+7,Connecticut
+33,North Carolina
+32,New York
+42,Tennessee
+12,Idaho
+35,Ohio
+26,Montana
+3,Arizona
+49,Wisconsin
+29,New Hampshire
+43,Texas
+38,Pennsylvania
+15,Iowa
+23,Minnesota
+16,Kansas
+45,Vermont
+4,Arkansas
+13,Illinois
+5,California
+47,Washington
+1,Alabama
+8,Delaware
+28,Nevada
+37,Oregon
+21,Massachusetts
+24,Mississippi
+14,Indiana
+17,Kentucky
+9,Florida
+41,South Dakota
+48,West Virginia
+46,Virginia
+30,New Jersey
+34,North Dakota
+36,Oklahoma
+20,Maryland
+39,Rhode Island
+11,Hawaii
+22,Michigan
+10,Georgia
+2,Alaska
+18,Louisiana
+44,Utah
+40,South Carolina
+6,Colorado

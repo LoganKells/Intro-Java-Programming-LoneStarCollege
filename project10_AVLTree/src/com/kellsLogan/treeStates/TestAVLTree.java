@@ -46,7 +46,7 @@ public class TestAVLTree {
         stateAVLTree.preOrderWalk(stateAVLTree.getRootNode());
 
         // Test height calculation of a node
-        System.out.println("Height Results...");
+        System.out.println("\n...\n...\n...\nHeight Results...");
         stateAVLTree.calcHeight(stateAVLTree.getRootNode());
         System.out.println("Height of root node \"" + stateAVLTree.getRootNode().getValue() + "," + stateAVLTree.getRootNode().getName() + "\": " + stateAVLTree.getRootNode().getHeight());
         System.out.println("Height of left leaf of root, node \"" + stateAVLTree.getRootNode().left.getValue() + "," + stateAVLTree.getRootNode().left.getName() + "\": " + stateAVLTree.getRootNode().left.getHeight());
