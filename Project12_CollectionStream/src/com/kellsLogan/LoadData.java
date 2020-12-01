@@ -5,14 +5,17 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// LoadData.java
+// COSC-2436 2801 1
+// Created by: Logan Kells
+// Date: 11/30/2020
+
 public class LoadData {
+    // Initialize an ArrayList which will store each line of data from the .txt input file.
+    private ArrayList<String> data = new ArrayList<>();
 
-
-    public ArrayList<String> loadText(){
-        // This method will load all lines in a txt file found in the local
-
-        // Initialize an ArrayList which will store each line of data from the .txt input file.
-        ArrayList<String> data = new ArrayList<>();
+    public void loadText(){
+        // This method will load all lines in a txt file found in the local ./resources file.
 
         // Prompt the user to enter the local filepath.
         System.out.println("Please enter the filename:");
@@ -34,7 +37,7 @@ public class LoadData {
 
             // Load all lines in the .txt file to the ArrayList.
             while(lineScanner.hasNextLine()){
-                data.add(lineScanner.nextLine());
+                this.data.add(lineScanner.nextLine());
             }
         }
         // Catch a FileNotFoundException and print an error to the console.
@@ -43,9 +46,9 @@ public class LoadData {
         }
 
         System.out.println("Done loading data.");
-
-        // Return the ArrayList of data
-        return data;
     }
 
+    public ArrayList<String> getData() {
+        return data;
+    }
 }
