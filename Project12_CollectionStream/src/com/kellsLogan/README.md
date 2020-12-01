@@ -4,13 +4,6 @@ This java package will utilize the stream() methods (from Java collections) to d
 * print all the states that have the letter 'r' (any case) in it.
 * print any state that has multiple words in the state name (e.g. New York)
 
-The AVL tree will be printed to the console using the following traversal (cursor walk) methods:
-* In-order
-* Post-order
-* Pre-order
-
-Use the TestAVLTree class to test. This will search in the local "./resources" path for the file you enter in the console after prompted. 
-
 ## Included Files
 The following files are included in this package.
 * ./src/package/TestCollectionStream.java
